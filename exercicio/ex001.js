@@ -1,3 +1,5 @@
+// Aula 006
+
 alert("Bem-vindo! A seguir pediremos que informe alguns dados.")
 
 let nome = prompt("Qual seu nome?")
