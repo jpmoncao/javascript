@@ -25,3 +25,10 @@ let noValue
 console.log(noValue) // = undefined
 // EXPLICAÇÃO: Isso acontece porque a variável foi apenas criada, mas não
 //             tem valor atribuido, assim, ficando undefined.
+
+// Retornando as respostas
+let departureConfirmation = confirm("Nave pronta pra decolar. Aguardando confirmação")
+console.log(departureConfirmation) // Retorna true ou false
+
+let pilot = prompt("Qual seu nome, piloto?")
+console.log(pilot) // Retorna resposta do prompt
