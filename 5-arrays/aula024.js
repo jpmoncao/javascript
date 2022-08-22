@@ -29,6 +29,7 @@ console.log(hitchedSpaceships.length) // Retorna: 3
 
 // .indexOf()
 let elementalPos = hitchedSpaceships.indexOf("Elemental")   // Verifica posição do valor "Elemental"
-let goliasPos = hitchedSpaceships.indexOf("Golias")   // Verifica posição do valor "Golias"
+let goliasPos = hitchedSpaceships.indexOf("Golias")         // Verifica posição do valor "Golias"
+
 console.log(elementalPos)                                   // Retorna: 1
 console.log(goliasPos)                                      // Retorna: -1 (Não existe nesse Array)
