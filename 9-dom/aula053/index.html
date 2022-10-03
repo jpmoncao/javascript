@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 053</title>
+</head>
+
+<body>
+    <script src="js/get-object.js"></script>
+    <form>
+        <p>
+            <label for="first-name">Nome: </label>
+            <input type="text" name="first-name" id="first-name" onchange="sayMyFirstName(this)">
+            <!--A palavra 'this' referencia o próprio elemento-->
+        </p>
+
+        <p>
+            <label for="last-name" onchange="sayMyLastName()">Sobrenome: </label>
+            <input type="text" name="last-name" id="last-name">
+        </p>
+    </form>
+</body>
+
+</html>
