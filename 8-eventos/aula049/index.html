@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
-    <script src="events.js"></script>
+    <script src="event.js"></script>
 </head>
+
 <body>
     <p>
-        <button>CLIQUE AQUI</button>
+        <button onclick="clickMe()">CLIQUE AQUI</button>
     </p>
 
     <p>
         Focus
-        <input type="text" name="focus-text" id="focus-text">
+        <input onfocus="focusMe()" type="text" name="focus-text" id="focus-text">
     </p>
 
     <p>
         Blur
-        <input type="text" name="blur-text" id="blur-text">
+        <input onblur="blurMe()" type="text" name="blur-text" id="blur-text">
     </p>
 
     <p>
         Change
-        <input type="text" name="change-text" id="change-text">
+        <input onchange="changeMe()" type="text" name="change-text" id="change-text">
     </p>
 
-    <p>Passe o mouse sobre mim!</p>
+    <p onmouseover="hoverMe()">Passe o mouse sobre mim!</p>
 </body>
+
 </html>
