@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 015 - Aula 059</title>
+    <style>
+        .field {
+            margin: 8px;
+        }
+
+        .list-immobile-item {
+            padding: 8px 8px;
+            width: 22%;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+
+        .list-immobile-item>h4,
+        .list-immobile-item>p {
+            display: inline;
+        }
+
+        .list-immobile-item>.remove {
+            background-color: red;
+            padding: 2px 4px;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            color: white;
+        }
+    </style>
+
+    <script src="js/Immobile.js"></script>
+    <script src="js/cadaster-immobile.js"></script>
+</head>
+
+<body>
+    <form onsubmit="getDataImmobile()" method="post">
+        <fieldset>
+            <legend>Tipo do imóvel</legend>
+            <input checked type="radio" name="immobile" id="apartment" value="Apartamento">Apartamento
+            <input type="radio" name="immobile" id="house" value="Casa">Casa
+        </fieldset>
+
+        <div class="field">
+            <label for="area">Área do imóvel</label>
+            <input type="number" name="area" id="area" placeholder="Insira a área" required>
+        </div>
+
+        <fieldset>
+            <legend>Status de habitação</legend>
+            <input type="radio" name="status" id="rented" value="Alugado">Alugado
+            <input type="radio" name="status" id="unrented" value="Não alugado" checked>Não alugado
+        </fieldset>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <section class="list-immobile">
+    </section>
+</body>
+
+</html>
