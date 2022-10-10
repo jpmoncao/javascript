@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 055</title>
+    <script src="js/form-selector.js"></script>
+</head>
+
+<body>
+    <form >
+        <p>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name">
+        </p>
+
+        <p>
+            <label for="color">Cor primária:</label>
+            <select name="color" id="color">
+                <option value="yellow">Amarelo</option>
+                <option value="blue">Azul</option>
+                <option value="red">Vermelho</option>
+            </select>
+        </p>
+
+        <fieldset>
+            <legend>Gosta de programar?</legend>
+            <input type="radio" name="like-programming" value="Sim">Sim
+            <input type="radio" name="like-programming" value="Não">Não
+        </fieldset>
+
+        <fieldset>
+            <legend>Conhecimentos em programação web:</legend>
+            <input type="checkbox" name="developer-options" value="HTML">HTML
+            <input type="checkbox" name="developer-options" value="CSS">CSS
+            <input type="checkbox" name="developer-options" value="JS">JavaScript
+            <input type="checkbox" name="developer-options" value="Express">Express
+        </fieldset>
+
+        <button onclick="showInfo()" type="button">Enviar</button>
+    </form>
+</body>
+
+</html>
