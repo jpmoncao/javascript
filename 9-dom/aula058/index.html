@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 058</title>
+    <script src="js/manipulating-attr.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Status</legend>
+        <select id="select-status" onchange="verifyEnablement()">
+            <option value="enabled">Habilitado</option>
+            <option value="disabled">Desabilitado</option>
+        </select>
+    </fieldset>
+
+    <p>
+        <label for="some-text">Algum texto: </label>
+        <input type="text" name="some-text">
+    </p>
+
+    <p id="message"></p>
+</body>
+
+</html>
