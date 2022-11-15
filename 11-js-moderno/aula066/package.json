@@ -1,0 +1,19 @@
+{
+  "name": "npm_class",
+  "version": "1.0.0",
+  "description": "Aula sobre instalação de pacotes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NPM",
+    "class",
+    "study"
+  ],
+  "author": "João Pedro Monção",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}
